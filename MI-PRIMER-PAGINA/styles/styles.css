@@ -1,0 +1,140 @@
+/* ============================
+  BASE
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #FFF3E0;
+}
+
+/* ============================
+   TIPOGRAFÍA - TÍTULOS Y PÁRRAFOS
+============================ */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2E7D32;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ============================
+   LINKS
+============================ */
+a {
+  color: #FF7043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #E64A19;
+  text-decoration: underline;
+}
+
+/* ============================
+   HEADER Y NAV
+============================ */
+header {
+  background-color: #2E7D32;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: #ffffff;
+}
+
+header nav a:hover {
+  color: #FFCC80;
+}
+
+/* ============================
+   MAIN Y SECCIONES
+============================ */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+/* ============================
+   ARTICLES (productos destacados)
+============================ */
+article {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+article figure {
+  margin-bottom: 1rem;
+}
+
+article img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+article figcaption {
+  font-weight: 600;
+  color: #2E7D32;
+  margin-top: 0.5rem;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+  background-color: #2E7D32;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+footer nav ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+footer nav a {
+  color: #FFCC80;
+}
+
+footer nav a:hover {
+  color: #ffffff;
+}
