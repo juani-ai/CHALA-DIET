@@ -1,0 +1,205 @@
+/* ============================
+   IMPORTACIÓN DE FUENTE (Google Fonts)
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* ============================
+   RESET GLOBAL Y BOX MODEL  
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.pagina {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #FFF3E0;
+}
+
+/* ============================
+   TIPOGRAFÍA - TÍTULOS Y PÁRRAFOS
+============================ */
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2E7D32;
+}
+
+.subtitulo {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+.texto-parrafo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* ============================
+   LINKS GENÉRICOS
+============================ */
+.enlace {
+  color: #FF7043;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.enlace:hover {
+  color: #E64A19;
+  text-decoration: underline;
+}
+
+/* ============================
+   HEADER Y NAV (Navbar flexible)
+============================ */
+.header-sitio {
+  background-color: #2E7D32;
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titulo-header {
+  color: #ffffff;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.enlace-header {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.enlace-header:hover {
+  color: #FFCC80;
+}
+
+/* ============================
+   MAIN Y SECCIONES
+============================ */
+.main-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ============================
+   ARTICLES (productos destacados)
+============================ */
+.tarjeta-producto {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.figura-producto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.imagen-producto {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+}
+
+.caption-producto {
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+/* ============================
+   FILA DE PRODUCTOS (fila de tarjetas)
+============================ */
+.grid-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.grid-productos .tarjeta-producto {
+  flex: 1 1 250px;
+}
+
+/* ============================
+   LISTA "OTROS PRODUCTOS"
+============================ */
+.lista-otros {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+/* ============================
+   PREGUNTAS 
+============================ */
+.pregunta-titulo {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.footer-sitio {
+  background-color: #2E7D32;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-lista-footer {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.enlace-footer {
+  color: #FFCC80;
+  text-decoration: none;
+}
+
+.enlace-footer:hover {
+  color: #ffffff;
+}
