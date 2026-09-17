@@ -95,14 +95,19 @@ body {
 }
 
 /* ============================
-   MAIN Y SECCIONES
+   MAIN Y SECCIONES (Mobile First)
 ============================ */
 .main-contenido {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "sobre"
+    "beneficios"
+    "destacado";
   gap: 2.5rem;
 }
 
@@ -112,8 +117,13 @@ body {
   gap: 0.75rem;
 }
 
+.seccion-intro      { grid-area: intro; }
+.seccion-sobre      { grid-area: sobre; }
+.seccion-beneficios { grid-area: beneficios; }
+.seccion-destacado  { grid-area: destacado; }
+
 /* ============================
-   ARTICLES (productos destacados)
+   ARTICLES (tarjeta de producto)
 ============================ */
 .tarjeta-producto {
   background-color: #ffffff;
@@ -142,16 +152,12 @@ body {
 }
 
 /* ============================
-   FILA DE PRODUCTOS (fila de tarjetas)
+   GRID DE PRODUCTOS (pages/productos.html)
 ============================ */
 .grid-productos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
-}
-
-.grid-productos .tarjeta-producto {
-  flex: 1 1 250px;
 }
 
 /* ============================
@@ -202,4 +208,21 @@ body {
 
 .enlace-footer:hover {
   color: #ffffff;
+}
+
+/* ============================================
+   RESPONSIVE - BREAKPOINT DESKTOP (min-width: 1024px)
+============================================ */
+@media (min-width: 1024px) {
+  .main-contenido {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "intro       intro"
+      "sobre       beneficios"
+      "destacado   destacado";
+  }
+
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
